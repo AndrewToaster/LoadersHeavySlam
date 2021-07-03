@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# RCS1213: Remove unused member declaration.
+dotnet_diagnostic.RCS1213.severity = none
