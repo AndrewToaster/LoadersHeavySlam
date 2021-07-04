@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -20,6 +20,12 @@
     <Reference Include="MMHOOK_Assembly-CSharp">
       <HintPath>Libraries\MMHOOK_Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Libraries\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>Libraries\MonoMod.Utils.dll</HintPath>
+    </Reference>
     <Reference Include="R2API">
       <HintPath>Libraries\R2API.dll</HintPath>
     </Reference>
@@ -31,6 +37,9 @@
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Libraries\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>Libraries\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 
