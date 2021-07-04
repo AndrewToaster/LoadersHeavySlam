@@ -88,6 +88,11 @@ namespace HeavySlam
                 return _table.Remove(key);
             }
 
+            public bool Contains(TKey key)
+            {
+                return _table.TryGetValue(key, out Tuple<TValue> _);
+            }
+
             public static implicit operator ConditionalWeakTable<TKey, Tuple<TValue>>(WeakTable<TKey, TValue> table)
             {
                 return table._table;
