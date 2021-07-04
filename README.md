@@ -21,7 +21,7 @@ Notes:
 
 # Changelog
 ## 1.0.1
-- Added the ability to scale base values *(https://github.com/AndrewToaster/R2API-HeavySlam/issues/1)*
+- Added the ability to scale base values *(https://github.com/AndrewToaster/LoadersHeavySlam/issues/1)*
 - Added particle scaling for speed *(can be disabled)*
 
 ## 1.0.0
