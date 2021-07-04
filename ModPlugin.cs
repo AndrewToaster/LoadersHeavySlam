@@ -22,11 +22,9 @@ namespace HeavySlam
     {
         public static ModPlugin Instance { get; private set; }
 
-        private Harmony _harmony;
-
         public const string GUID = "com.andrewtoasterr.heavyslam";
         public const string NAME = "Loader's Heavy-Slam";
-        public const string VERSION = "1.0.0.0";
+        public const string VERSION = "1.0.1.0";
 
         public static ManualLogSource Log { get => Instance.Logger; }
 
