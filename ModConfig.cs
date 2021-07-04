@@ -47,8 +47,8 @@ namespace HeavySlam
             BlastForceSpeedCoef = file.Bind("Coefficients", "BlastForceSpeedCoef", 0.547f, "Controls how to scale blast force with fall speed");
 
             BaseDamageCoef = file.Bind("Coefficients", "BaseDamageCoef", 1f, "Controls how much base Damage is applied");
-            RadiusSpeedCoef = file.Bind("Coefficients", "BaseRadiusCoef", 1f, "Controls how much base Radius is applied");
-            BlastForceSpeedCoef = file.Bind("Coefficients", "BaseBlastForceCoef", 1f, "Controls how much base Knock-Up force is applied");
+            BaseRadiusCoef = file.Bind("Coefficients", "BaseRadiusCoef", 1f, "Controls how much base Radius is applied");
+            BaseBlastForceCoef = file.Bind("Coefficients", "BaseBlastForceCoef", 1f, "Controls how much base Knock-Up force is applied");
 
             Initialized = true;
         }

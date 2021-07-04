@@ -40,7 +40,8 @@ namespace HeavySlam
             Logger.LogInfo(slamDef.skillDescriptionToken);
             slamDef.skillDescriptionToken = "LOADER_SPECIAL_ALT_DESCRIPTION_HEAVY";
 
-            LanguageAPI.Add("LOADER_SPECIAL_ALT_DESCRIPTION_HEAVY", "<style=cIsDamage>Stunning</style> and <style=cIsUtility>Heavy</style>. Slam your fists down, dealing <style=cIsDamage>2000%</style> damage on impact.", "en");
+            // Ngl, pretty cheeky
+            LanguageAPI.Add("LOADER_SPECIAL_ALT_DESCRIPTION_HEAVY", $"<style=cIsDamage>Stunning</style> and <style=cIsUtility>Heavy</style>. Slam your fists down, dealing <style=cIsDamage>{2000 * ModConfig.BaseDamageCoef.Value}%</style> damage on impact.", "en");
 
             On.EntityStates.Loader.GroundSlam.OnMovementHit += ThunderSlamPatch.SlamHitGround;
             On.EntityStates.Loader.GroundSlam.DetonateAuthority += ThunderSlamPatch.CreateExplosion;
