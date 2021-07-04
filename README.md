@@ -20,6 +20,9 @@ Notes:
 - *speed* may be reduced by the minimal speed if specified in the config
 
 # Changelog
+## 1.0.2
+- Added the ability to finish Thunderslam mid-air, highly customizable via configs
+
 ## 1.0.1
 - Added the ability to scale base values *(https://github.com/AndrewToaster/LoadersHeavySlam/issues/1)*
 - Added particle scaling for speed *(can be disabled)*

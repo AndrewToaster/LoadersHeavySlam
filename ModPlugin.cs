@@ -45,7 +45,8 @@ namespace HeavySlam
 
             On.EntityStates.Loader.GroundSlam.OnMovementHit += ThunderSlamPatch.SlamHitGround;
             On.EntityStates.Loader.GroundSlam.DetonateAuthority += ThunderSlamPatch.CreateExplosion;
-            On.EntityStates.Loader.GroundSlam.FixedUpdate += ThunderSlamPatch.ModifyHandEffects;
+            On.EntityStates.Loader.GroundSlam.FixedUpdate += ThunderSlamPatch.FixedUpdate;
+            On.EntityStates.Loader.GroundSlam.OnExit += ThunderSlamPatch.OnExit;
 
             // Adds our command
             CommandHelper.AddToConsoleWhenReady();
@@ -55,7 +56,8 @@ namespace HeavySlam
         {
             On.EntityStates.Loader.GroundSlam.OnMovementHit -= ThunderSlamPatch.SlamHitGround;
             On.EntityStates.Loader.GroundSlam.DetonateAuthority -= ThunderSlamPatch.CreateExplosion;
-            On.EntityStates.Loader.GroundSlam.FixedUpdate -= ThunderSlamPatch.ModifyHandEffects;
+            On.EntityStates.Loader.GroundSlam.FixedUpdate -= ThunderSlamPatch.FixedUpdate;
+            On.EntityStates.Loader.GroundSlam.OnExit -= ThunderSlamPatch.OnExit;
         }
     }
 }
