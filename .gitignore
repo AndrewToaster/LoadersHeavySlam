@@ -335,3 +335,6 @@ ASALocalRun/
 
 # Ignore Game Libraries
 [Ll]ibraries/
+
+# Ignore personal files
+[Uu]pload/
