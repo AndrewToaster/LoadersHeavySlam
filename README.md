@@ -1,3 +1,5 @@
+![](GithubFiles/icon.png)
+
 # Loader's Heavy Slam
 Makes the Loader's Thunderslam more satisfying.
 
